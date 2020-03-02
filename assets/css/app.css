@@ -1,0 +1,250 @@
+/* Todo Brillo Styles */
+/* asomic.com  */
+/* -------------------------------- */
+/* -------------------------------- */
+/* Reset Styles: http://meyerweb.com/eric/tools/css/reset/  */
+/* v2.0 | 20110126 */
+/* License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Basics */
+body {
+  font-family: "Noto Sans SC";
+  line-height: 1.2;
+  font-size: 15px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  line-height: 120%;
+  color: #1F56A7;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+h3 {
+  font-size: 24px;
+}
+
+@media (min-width: 900px) {
+  h3 {
+    font-size: 26px;
+  }
+}
+h4 {
+  font-size: 20px;
+}
+
+@media (min-width: 900px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+h6 {
+  font-size: 13px;
+}
+
+@media (min-width: 900px) {
+  h6 {
+    font-size: 14px;
+  }
+}
+p {
+  color: #222954;
+  line-height: 140%;
+}
+
+/* Utilities */
+.bg-lightgray {
+  background-color: #FAFAFA;
+}
+
+.pd-lr {
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/hero-back.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  box-sizing: border-box;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 38, 82, 0.35);
+}
+.hero .in {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.hero .in img {
+  width: 120px;
+  margin-bottom: 0.8em;
+}
+.hero .in h3 {
+  color: white;
+}
+
+/* Aromatizantes */
+.aromatizantes {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+.aromatizantes .aroma-info .aroma-img {
+  height: 36vh;
+  background-position: center;
+  background-size: cover;
+}
+.aromatizantes .aroma-info .aroma-data {
+  position: relative;
+  z-index: 1;
+  padding-top: 16px;
+  padding-bottom: 26px;
+}
+.aromatizantes .aroma-info .aroma-data::before {
+  content: "";
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/curves-1.png");
+}
+.aromatizantes .aroma-info .aroma-data .item-data {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aromatizantes .aroma-info .aroma-data .item-data .img {
+  margin-top: -24vh;
+  width: 200px;
+  overflow: hidden;
+  height: 400px;
+  margin-bottom: 0.4em;
+  text-align: center;
+  position: relative;
+}
+.aromatizantes .aroma-info .aroma-data .item-data .img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #fafafa 0%, rgba(250, 250, 250, 0) 51%);
+}
+.aromatizantes .aroma-info .aroma-data .item-data .img img {
+  width: 80%;
+}
+.aromatizantes .aroma-info .aroma-data .item-data .text {
+  width: 100%;
+  text-align: center;
+}
+.aromatizantes .selector .in {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: auto;
+  background-color: red;
+  position: relative;
+}
+.aromatizantes .selector .in .item {
+  z-index: 2;
+  margin-right: 52px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.aromatizantes .selector .in .item img {
+  max-width: 100%;
+  height: 120px;
+  margin-bottom: 6px;
+}
+.aromatizantes .selector .in .item h4 {
+  text-align: center;
+}
+
+/* Contacto */
+.contacto .in .form form input, .contacto .in .form form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}

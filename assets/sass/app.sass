@@ -1,0 +1,244 @@
+/* Todo Brillo Styles
+/* asomic.com 
+/* --------------------------------
+/* --------------------------------
+
+@import reset
+
+// Branding Colors
+$blue: #1F56A7
+$darkBlue: #293578
+$ultraDarkBlue: #092652
+$lightBlue: #BACAE2
+$ultraLightBlue: #F2F5F9
+$grayBlue: #3B4A5F
+$lightGray: #FAFAFA
+$black: #222954
+
+// Gradient
+$gradient-white: linear-gradient(180deg, rgba(248, 248, 248, 0) 32.13%, #F8F8F8 89.57%), url(ashtray-book-cushion-decoration-298842.jpg), #BFFFF0
+
+/* Basics
+body
+    font-family: 'Noto Sans SC'
+    line-height: 1.2
+    font-size: 15px
+    max-width: 100%
+    position: relative
+    // overflow: hidden
+
+/* Typography
+h1, h2, h3, h4, h5, h6
+    font-weight: 900
+    line-height: 120%
+    color: $blue
+
+h1
+    font-size: 22px
+    margin-bottom: 12px
+
+@media (min-width: 900px)
+    h1
+        font-size: 32px
+
+h2
+    //
+
+h3
+    font-size: 24px
+
+@media (min-width: 900px)
+    h3
+        font-size: 26px
+
+h4
+    font-size: 20px
+
+@media (min-width: 900px)
+    h4
+        font-size: 24px
+
+h5
+    //
+
+h6
+    font-size: 13px
+
+@media (min-width: 900px)
+    h6
+       font-size: 14px
+
+p
+    color: $black
+    line-height: 140%
+
+/* Utilities
+.bg-lightgray
+    background-color: $lightGray
+
+.pd-lr
+    padding:
+        left: 1.4em
+        right: 1.4em
+
+/* Hero
+.hero
+    width: 100%
+    height: 100vh
+    background-image: url('../img/hero-back.jpg')
+    background-size: cover
+    background-position: center
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    // color: white
+    z-index: 8
+    box-sizing: border-box
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(#092652, 0.35)
+    .in
+        position: relative
+        z-index: 10
+        text-align: center
+        padding-bottom: 1em
+        img
+            width: 120px
+            margin-bottom: 0.8em
+        h3
+            color: white
+
+/* Aromatizantes
+.aromatizantes
+    width: 100%
+    background-color: $lightGray
+    .aroma-info
+        .aroma-img
+            height: 36vh
+            background-position: center
+            background-size: cover
+        .aroma-data
+            position: relative
+            z-index: 1
+            padding: 
+                top: 16px
+                bottom: 26px
+            &::before
+                content: ''
+                height: 100px
+                width: 100%
+                position: absolute
+                top: -20px
+                left: 0
+                right: 0
+                z-index: 2
+                background-size: contain
+                background-repeat: no-repeat
+                background-image: url('../img/curves-1.png')
+            .item-img
+            .item-data
+                position: relative
+                z-index: 3
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                // justify-content: space-between
+                .img
+                    margin-top: -24vh
+                    width: 200px
+                    // height: 200px
+                    overflow: hidden
+                    height: 400px
+                    // height: 100vw
+                    margin-bottom: 0.4em
+                    text-align: center
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 51%)
+                    img
+                        width: 80%
+                .text
+                    width: 100%
+                    text-align: center
+                    h1
+                    p
+    .selector
+        // position: relative
+        // overflow: hidden !important
+        // height: 160px
+        .in
+            display: flex
+            flex-wrap: nowrap
+            align-content: center
+            justify-content: flex-start
+            overflow-x: scroll
+            overflow-y: hidden
+            // overflow: hidden
+            // height: 160px
+            width: auto
+            // height: 100%
+            background-color: red
+            // box-sizing: border-box
+            position: relative
+            .fixed-element
+            .item
+                // width: 100%
+                // position: relative
+                z-index: 2
+                margin-right: 52px
+                text-align: center
+                box-sizing: border-box
+                // padding:
+                //     left: 12px
+                //     right: 12px
+                img
+                    max-width: 100%
+                    height: 120px
+                    // width: 60%
+                    margin-bottom: 6px
+                h4
+                    text-align: center
+            // .arrow
+            //     position: fixed
+            //     // height: 100%
+            //     width: 30%
+            //     background: linear-gradient(266deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 51%)
+            //     right: 0
+            //     // top: 0
+            //     // bottom: 0
+            //     margin: auto
+            //     z-index: 3
+            //     width: 3%
+            //     align-self: center
+            //     position: absolute
+            //     top: 26%
+            //     margin: auto
+            //     &:first-child
+            //         left: 9%
+            //     &:last-child
+            //         left: auto
+            //         right: 9%
+            //     img
+            //         width: 10px
+
+
+/* Contacto
+.contacto
+    .in
+        .data
+            h1
+            p
+        .form
+            form
+                input, textarea
+                    width: 100%
+                    box-sizing: border-box
