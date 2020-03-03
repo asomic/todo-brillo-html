@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Todo Brillo Styles */
 /* asomic.com  */
 /* -------------------------------- */
@@ -66,33 +67,49 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  line-height: 120%;
+  line-height: 130%;
   color: #1F56A7;
 }
 
 h1 {
   font-size: 22px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+}
 @media (min-width: 900px) {
   h1 {
     font-size: 32px;
+    margin-bottom: 18px;
   }
 }
 h3 {
   font-size: 24px;
 }
 
+@media (min-width: 768px) {
+  h3 {
+    font-size: 25px;
+  }
+}
 @media (min-width: 900px) {
   h3 {
-    font-size: 26px;
+    font-size: 27px;
   }
 }
 h4 {
   font-size: 20px;
 }
 
+@media (min-width: 768px) {
+  h4 {
+    font-size: 22px;
+  }
+}
 @media (min-width: 900px) {
   h4 {
     font-size: 24px;
@@ -107,11 +124,22 @@ h6 {
     font-size: 14px;
   }
 }
+@media (min-width: 900px) {
+  h6 {
+    font-size: 14px;
+  }
+}
 p {
   color: #222954;
-  line-height: 140%;
+  line-height: 150%;
+  font-size: 14px;
 }
 
+@media (min-width: 900px) {
+  p {
+    font-size: 15px;
+  }
+}
 /* Utilities */
 .bg-lightgray {
   background-color: #FAFAFA;
@@ -122,6 +150,18 @@ p {
   padding-right: 1.4em;
 }
 
+@media (min-width: 768px) {
+  .pd-lr {
+    padding-left: 2.4em;
+    padding-right: 2.4em;
+  }
+}
+@media (min-width: 900px) {
+  .pd-lr {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
 /* Hero */
 .hero {
   width: 100%;
@@ -130,9 +170,6 @@ p {
   background-size: cover;
   background-position: center;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 8;
   box-sizing: border-box;
 }
@@ -148,6 +185,14 @@ p {
   z-index: 10;
   text-align: center;
   padding-bottom: 1em;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .hero .in img {
   width: 120px;
@@ -156,11 +201,39 @@ p {
 .hero .in h3 {
   color: white;
 }
+.hero .on {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0;
+}
 
+@media (min-width: 768px) {
+  .hero .in {
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero .in {
+    width: 60%;
+  }
+  .hero .in img {
+    width: 180px;
+    margin-bottom: 1em;
+  }
+}
 /* Aromatizantes */
 .aromatizantes {
   width: 100%;
   background-color: #FAFAFA;
+  padding-bottom: 14px;
 }
 .aromatizantes .aroma-info .aroma-img {
   height: 36vh;
@@ -171,7 +244,6 @@ p {
   position: relative;
   z-index: 1;
   padding-top: 16px;
-  padding-bottom: 26px;
 }
 .aromatizantes .aroma-info .aroma-data::before {
   content: "";
@@ -193,6 +265,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: auto;
+  width: 94%;
 }
 .aromatizantes .aroma-info .aroma-data .item-data .img {
   margin-top: -24vh;
@@ -217,6 +291,26 @@ p {
   width: 100%;
   text-align: center;
 }
+.aromatizantes .selector {
+  position: relative;
+  overflow: hidden;
+}
+.aromatizantes .selector::before {
+  position: absolute;
+  content: "‣";
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 17.5%;
+  padding-left: 6px;
+  font-size: 46px;
+  cursor: pointer;
+  right: 0;
+  width: 36px;
+  height: 100%;
+  background: linear-gradient(266deg, #fafafa 27%, rgba(250, 250, 250, 0) 100%);
+  z-index: 3;
+}
 .aromatizantes .selector .in {
   display: flex;
   flex-wrap: nowrap;
@@ -224,13 +318,25 @@ p {
   justify-content: flex-start;
   overflow-x: scroll;
   overflow-y: hidden;
+  cursor: move;
+  padding-top: 30px;
+  padding-bottom: 34px;
   width: auto;
-  background-color: red;
+  background-color: #FAFAFA;
   position: relative;
+  z-index: 2;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.aromatizantes .selector .in::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  background: transparent !important;
 }
 .aromatizantes .selector .in .item {
   z-index: 2;
-  margin-right: 52px;
+  padding-left: 28px;
+  padding-right: 28px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -241,10 +347,461 @@ p {
 }
 .aromatizantes .selector .in .item h4 {
   text-align: center;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+.aromatizantes .selector .in .item:first-child {
+  padding-left: 32px;
+}
+.aromatizantes .selector .in .item:last-child {
+  padding-right: 58px;
 }
 
-/* Contacto */
-.contacto .in .form form input, .contacto .in .form form textarea {
+@media (min-width: 768px) {
+  .aromatizantes {
+    padding-bottom: 20px;
+  }
+  .aromatizantes .aroma-info .aroma-data::before {
+    top: -70px;
+    background-size: cover;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data {
+    margin-top: -40%;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .img {
+    width: 35%;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .img:before {
+    display: none;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .img img {
+    width: 60%;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .text {
+    align-self: flex-end;
+    width: 64%;
+    padding-right: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-bottom: 1.8em;
+  }
+  .aromatizantes .selector::before {
+    padding-top: 7.5%;
+  }
+  .aromatizantes .selector .in {
+    margin-left: auto;
+    margin-right: auto;
+    width: 86%;
+  }
+}
+@media (min-width: 900px) {
+  .aromatizantes .aroma-info .aroma-img {
+    height: 400px;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data {
+    margin-top: -32%;
+    width: 80%;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .img img {
+    width: 60%;
+  }
+  .aromatizantes .selector .in .item {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .aromatizantes .aroma-info .aroma-data .item-data {
+    margin-top: -28%;
+    width: 74%;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .text {
+    width: 62%;
+    padding-bottom: 2.2em;
+  }
+}
+/* Columns: Automatico, Eléctrico, Lustramuebles, Renovadores */
+.columns .column {
+  background-color: #FAFAFA;
+}
+.columns .column .header {
   width: 100%;
+  height: 320px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.columns .column .header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%);
+}
+.columns .column .header img {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 12px;
+  height: 240px;
+}
+.columns .column .body {
+  padding-bottom: 46px;
+}
+.columns .column .body .selector {
+  position: relative;
+}
+.columns .column .body .selector .in {
+  display: flex;
+  margin: auto;
+  max-width: 65%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  width: auto;
+  background-color: #FAFAFA;
+  position: relative;
+}
+.columns .column .body .selector .in .item {
+  cursor: pointer;
+  text-align: center;
   box-sizing: border-box;
+}
+.columns .column .body .selector .in .item img {
+  height: 24px;
+  margin-bottom: 6px;
+}
+.columns .column .body .data {
+  text-align: center;
+  margin: auto;
+  width: 84%;
+}
+.columns .column .body .data h4 {
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .columns {
+    display: flex;
+  }
+  .columns .column {
+    width: 50%;
+  }
+  .columns .column .body {
+    padding-bottom: 52px;
+  }
+  .columns .column .body .selector .in {
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+  .columns .column .body .data {
+    width: 74%;
+  }
+}
+@media (min-width: 900px) {
+  .columns .column .body {
+    padding-bottom: 62px;
+  }
+  .columns .column .body .selector .in {
+    max-width: 56%;
+  }
+  .columns .column .body .data {
+    width: 70%;
+  }
+  .columns .column .body .data h4 {
+    margin-bottom: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .columns .column .header {
+    height: 420px;
+  }
+  .columns .column .header img {
+    height: 280px;
+  }
+  .columns .column .body {
+    padding-bottom: 76px;
+  }
+  .columns .column .body .selector .in {
+    max-width: 48%;
+  }
+  .columns .column .body .data {
+    width: 60%;
+  }
+}
+/* Desinfectantes */
+.desinfectantes {
+  background-color: #FAFAFA;
+}
+.desinfectantes .img {
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.desinfectantes .img::before {
+  content: "";
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-image: url("../img/curves-1.png");
+}
+.desinfectantes .data {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  position: relative;
+  margin-top: -110px;
+  padding-bottom: 48px;
+  z-index: 3;
+}
+.desinfectantes .data img {
+  width: 90%;
+  margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .desinfectantes .img {
+    height: 300px;
+  }
+  .desinfectantes .data {
+    width: 64%;
+    margin-top: -140px;
+    padding-bottom: 52px;
+  }
+  .desinfectantes .data img {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .desinfectantes .img {
+    height: 350px;
+  }
+  .desinfectantes .data {
+    width: 55%;
+    margin-top: -190px;
+    padding-bottom: 72px;
+  }
+  .desinfectantes .data img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .desinfectantes .img {
+    height: 400px;
+  }
+  .desinfectantes .img::before {
+    height: 70px;
+  }
+  .desinfectantes .data {
+    width: 45%;
+    margin-top: -240px;
+    padding-bottom: 78px;
+  }
+  .desinfectantes .data img {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+}
+/* Productos Líderes */
+.lideres {
+  background-color: #FAFAFA;
+}
+.lideres .header {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lideres .header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%);
+}
+.lideres .header img {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 22px;
+  height: 170px;
+}
+.lideres .body {
+  text-align: center;
+  padding-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .lideres .header {
+    height: 380px;
+  }
+  .lideres .header img {
+    height: 260px;
+  }
+  .lideres .body {
+    width: 70%;
+    padding-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 900px) {
+  .lideres .header img {
+    height: 260px;
+  }
+  .lideres .body {
+    width: 50%;
+    padding-bottom: 56px;
+  }
+}
+@media (min-width: 1200px) {
+  .lideres .header {
+    height: 500px;
+  }
+  .lideres .header img {
+    height: 320px;
+  }
+  .lideres .body {
+    width: 45%;
+    padding-bottom: 74px;
+  }
+}
+/* Contacto */
+.contacto {
+  background-color: #F2F5F9;
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+.contacto .in .data {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.contacto .in .form form input, .contacto .in .form form textarea {
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: none;
+  border-radius: 2px;
+  border: solid 1px #293578;
+  padding: 8px 14px;
+  width: 100%;
+  font-size: 14px;
+  color: #8387A3;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+}
+.contacto .in .form form input::placeholder, .contacto .in .form form textarea::placeholder {
+  color: #8387A3;
+}
+.contacto .in .form form input[type=submit] {
+  background-color: #1F56A7;
+  border: solid 1px #1F56A7;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+}
+.contacto .in .form form textarea {
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    padding-top: 60px;
+    padding-bottom: 42px;
+  }
+  .contacto .in {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contacto .in .data {
+    width: 30%;
+    text-align: left;
+  }
+  .contacto .in .form {
+    width: 60%;
+  }
+  .contacto .in .form form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contacto .in .form form input, .contacto .in .form form textarea {
+    font-family: inherit;
+    margin-bottom: 10px;
+  }
+  .contacto .in .form form input {
+    width: 49%;
+  }
+  .contacto .in .form form input[type=submit] {
+    width: 100%;
+  }
+  .contacto .in .form form textarea {
+    width: 100%;
+    height: 100px;
+  }
+}
+@media (min-width: 900px) {
+  .contacto .in {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto {
+    padding-top: 72px;
+    padding-bottom: 50px;
+  }
+  .contacto .in {
+    width: 74%;
+  }
+  .contacto .in .data {
+    width: 32%;
+  }
+  .contacto .in .form {
+    width: 55%;
+  }
+  .contacto .in .form form textarea {
+    height: 140px;
+  }
+}
+/* Footer */
+footer {
+  background-color: #3B4A5F;
+}
+footer p {
+  color: #BACAE2;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 12px;
 }

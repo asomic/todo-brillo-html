@@ -30,16 +30,21 @@ body
 /* Typography
 h1, h2, h3, h4, h5, h6
     font-weight: 900
-    line-height: 120%
+    line-height: 130%
     color: $blue
 
 h1
     font-size: 22px
-    margin-bottom: 12px
+    margin-bottom: 16px
+
+@media (min-width: 768px)
+    h1
+        font-size: 26px
 
 @media (min-width: 900px)
     h1
         font-size: 32px
+        margin-bottom: 18px
 
 h2
     //
@@ -47,12 +52,20 @@ h2
 h3
     font-size: 24px
 
+@media (min-width: 768px)
+    h3
+        font-size: 25px
+
 @media (min-width: 900px)
     h3
-        font-size: 26px
+        font-size: 27px
 
 h4
     font-size: 20px
+
+@media (min-width: 768px)
+    h4
+        font-size: 22px
 
 @media (min-width: 900px)
     h4
@@ -68,9 +81,18 @@ h6
     h6
        font-size: 14px
 
+@media (min-width: 900px)
+    h6
+       font-size: 14px
+
 p
     color: $black
-    line-height: 140%
+    line-height: 150%
+    font-size: 14px
+
+@media (min-width: 900px)
+    p
+        font-size: 15px
 
 /* Utilities
 .bg-lightgray
@@ -81,6 +103,18 @@ p
         left: 1.4em
         right: 1.4em
 
+@media (min-width: 768px)
+    .pd-lr
+        padding:
+            left: 2.4em
+            right: 2.4em
+
+@media (min-width: 900px)
+    .pd-lr
+        padding:
+            left: 3em
+            right: 3em
+
 /* Hero
 .hero
     width: 100%
@@ -89,10 +123,6 @@ p
     background-size: cover
     background-position: center
     position: relative
-    display: flex
-    justify-content: center
-    align-items: center
-    // color: white
     z-index: 8
     box-sizing: border-box
     &::before
@@ -106,16 +136,164 @@ p
         z-index: 10
         text-align: center
         padding-bottom: 1em
+        width: 100%
+        height: 100%
+        box-sizing: border-box
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        justify-content: center
+        align-items: center
         img
             width: 120px
             margin-bottom: 0.8em
         h3
             color: white
+    .on
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        background-color: black
+        opacity: 0.0
+
+@media (min-width: 768px)
+    .hero
+        // width: 100%
+        // height: 100vh
+        // background-image: url('../img/hero-back.jpg')
+        // background-size: cover
+        // background-position: center
+        // position: relative
+        // z-index: 8
+        // box-sizing: border-box
+        &::before
+            // content: ''
+            // position: absolute
+            // width: 100%
+            // height: 100%
+            // background-color: rgba(#092652, 0.35)
+        .in
+            // position: relative
+            // z-index: 10
+            // text-align: center
+            // padding-bottom: 1em
+            width: 64%
+            margin-left: auto
+            margin-right: auto
+            // height: 100%
+            // box-sizing: border-box
+            // display: flex
+            // flex-wrap: wrap
+            // align-content: center
+            // justify-content: center
+            // align-items: center
+            img
+                // width: 120px
+                // margin-bottom: 0.8em
+            h3
+                // color: white
+        .on
+            // width: 100%
+            // height: 100%
+            // position: absolute
+            // top: 0
+            // background-color: black
+            // opacity: 0.0
+
+@media (min-width: 900px)
+    .hero
+        // width: 100%
+        // height: 100vh
+        // background-image: url('../img/hero-back.jpg')
+        // background-size: cover
+        // background-position: center
+        // position: relative
+        // z-index: 8
+        // box-sizing: border-box
+        &::before
+            // content: ''
+            // position: absolute
+            // width: 100%
+            // height: 100%
+            // background-color: rgba(#092652, 0.35)
+        .in
+            // position: relative
+            // z-index: 10
+            // text-align: center
+            // padding-bottom: 1em
+            // width: 64%
+            // margin-left: auto
+            // margin-right: auto
+            // height: 100%
+            // box-sizing: border-box
+            // display: flex
+            // flex-wrap: wrap
+            // align-content: center
+            // justify-content: center
+            // align-items: center
+            img
+                // width: 120px
+                // margin-bottom: 0.8em
+            h3
+                // color: white
+        .on
+            // width: 100%
+            // height: 100%
+            // position: absolute
+            // top: 0
+            // background-color: black
+            // opacity: 0.0
+
+@media (min-width: 1200px)
+    .hero
+        // width: 100%
+        height: 100vh
+        // background-image: url('../img/hero-back.jpg')
+        // background-size: cover
+        // background-position: center
+        // position: relative
+        // z-index: 8
+        // box-sizing: border-box
+        &::before
+            // content: ''
+            // position: absolute
+            // width: 100%
+            // height: 100%
+            // background-color: rgba(#092652, 0.35)
+        .in
+            // position: relative
+            // z-index: 10
+            // text-align: center
+            // padding-bottom: 1em
+            width: 60%
+            // margin-left: auto
+            // margin-right: auto
+            // height: 100%
+            // box-sizing: border-box
+            // display: flex
+            // flex-wrap: wrap
+            // align-content: center
+            // justify-content: center
+            // align-items: center
+            img
+                width: 180px
+                margin-bottom: 1em
+            h3
+                // color: white
+        .on
+            // width: 100%
+            // height: 100%
+            // position: absolute
+            // top: 0
+            // background-color: black
+            // opacity: 0.0
 
 /* Aromatizantes
 .aromatizantes
     width: 100%
     background-color: $lightGray
+    padding-bottom: 14px
     .aroma-info
         .aroma-img
             height: 36vh
@@ -126,7 +304,7 @@ p
             z-index: 1
             padding: 
                 top: 16px
-                bottom: 26px
+                // bottom: 26px
             &::before
                 content: ''
                 height: 100px
@@ -139,7 +317,6 @@ p
                 background-size: contain
                 background-repeat: no-repeat
                 background-image: url('../img/curves-1.png')
-            .item-img
             .item-data
                 position: relative
                 z-index: 3
@@ -147,6 +324,8 @@ p
                 justify-content: center
                 align-items: center
                 flex-wrap: wrap
+                margin: auto
+                width: 94%
                 // justify-content: space-between
                 .img
                     margin-top: -24vh
@@ -172,9 +351,26 @@ p
                     h1
                     p
     .selector
-        // position: relative
+        position: relative
+        overflow: hidden
         // overflow: hidden !important
         // height: 160px
+        // cursor: move
+        &::before
+            position: absolute
+            content: '‣'
+            color: black
+            display: flex
+            justify-content: flex-start
+            padding-top: 17.5%
+            padding-left: 6px
+            font-size: 46px
+            cursor: pointer
+            right: 0
+            width: 36px
+            height: 100%
+            background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+            z-index: 3
         .in
             display: flex
             flex-wrap: nowrap
@@ -182,19 +378,32 @@ p
             justify-content: flex-start
             overflow-x: scroll
             overflow-y: hidden
+            cursor: move
+            // padding-bottom: 24px
+            padding:
+                top: 30px
+                bottom: 34px
             // overflow: hidden
             // height: 160px
             width: auto
             // height: 100%
-            background-color: red
+            background-color: $lightGray
             // box-sizing: border-box
             position: relative
-            .fixed-element
+            z-index: 2
+            -ms-overflow-style: none
+            overflow: -moz-scrollbars-none
+            &::-webkit-scrollbar
+                display: none
+                width: 0 !important
+                background: transparent !important
             .item
-                // width: 100%
-                // position: relative
                 z-index: 2
-                margin-right: 52px
+                // margin-right: 52px
+                // cursor: pointer
+                padding:
+                    left: 28px
+                    right: 28px
                 text-align: center
                 box-sizing: border-box
                 // padding:
@@ -203,42 +412,1039 @@ p
                 img
                     max-width: 100%
                     height: 120px
-                    // width: 60%
                     margin-bottom: 6px
                 h4
                     text-align: center
-            // .arrow
-            //     position: fixed
-            //     // height: 100%
-            //     width: 30%
-            //     background: linear-gradient(266deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 51%)
-            //     right: 0
-            //     // top: 0
-            //     // bottom: 0
-            //     margin: auto
-            //     z-index: 3
-            //     width: 3%
-            //     align-self: center
-            //     position: absolute
-            //     top: 26%
-            //     margin: auto
-            //     &:first-child
-            //         left: 9%
-            //     &:last-child
-            //         left: auto
-            //         right: 9%
-            //     img
-            //         width: 10px
+                    margin: auto
+                    display: block
+                    width: 100%
+                &:first-child
+                    padding-left: 32px
+                &:last-child
+                    padding-right: 58px
 
+@media (min-width: 768px)
+    .aromatizantes
+        padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                // height: 40vh
+            .aroma-data
+                &::before
+                    top: -70px
+                    background-size: cover
+                .item-data
+                    margin-top: -40%
+                    flex-wrap: nowrap
+                    width: 100%
+                    justify-content: space-between
+                    .img
+                        width: 35%
+                        margin-top: 0
+                        margin-bottom: 0
+                        height: auto
+                        &:before
+                            display: none
+                        img
+                            width: 60%
+                    .text
+                        align-self: flex-end
+                        width: 64%
+                        padding-right: 20px
+                        text-align: left
+                        box-sizing: border-box
+                        padding-bottom: 1.8em
+                        // width: auto
+                        h1
+                        p
+        .selector
+            // overflow: hidden
+            &::before
+                padding-top: 7.5%
+            .in
+                margin:
+                    left: auto
+                    right: auto
+                width: 86%
+                &::-webkit-scrollbar
+                .item
+                    img
+                    h4
+                    &:first-child
+                    &:last-child
+
+@media (min-width: 900px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                height: 400px
+            .aroma-data
+                &::before
+                    // top: -70px
+                    // background-size: cover
+                .item-data
+                    margin-top: -32%
+                    // flex-wrap: nowrap
+                    width: 80%
+                    // justify-content: space-between
+                    .img
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        // height: auto
+                        &:before
+                            // display: none
+                        img
+                            width: 60%
+                    .text
+                        // align-self: flex-end
+                        // width: 64%
+                        // padding-right: 20px
+                        // text-align: left
+                        // box-sizing: border-box
+                        // padding-bottom: 1.8em
+                        h1
+                        p
+        .selector
+            &::before
+                // padding-top: 7.5%
+            .in
+                // margin:
+                    // left: auto
+                    // right: auto
+                // width: 86%
+                &::-webkit-scrollbar
+                .item
+                    padding:
+                        left: 40px
+                        right: 40px
+                    img
+                    h4
+                    &:first-child
+                    &:last-child
+
+@media (min-width: 1200px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                // height: 400px
+            .aroma-data
+                &::before
+                    // top: -70px
+                    // background-size: cover
+                .item-data
+                    margin-top: -28%
+                    // flex-wrap: nowrap
+                    width: 74%
+                    // justify-content: space-between
+                    .img
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        // height: auto
+                        &:before
+                            // display: none
+                        img
+                            // width: 60%
+                    .text
+                        // align-self: flex-end
+                        width: 62%
+                        // padding-right: 20px
+                        // text-align: left
+                        // box-sizing: border-box
+                        padding-bottom: 2.2em
+                        h1
+                        p
+        .selector
+            &::before
+                // padding-top: 7.5%
+            .in
+                // margin:
+                    // left: auto
+                    // right: auto
+                // width: 86%
+                &::-webkit-scrollbar
+                .item
+                    // padding:
+                        // left: 40px
+                        // right: 40px
+                    img
+                    h4
+                    &:first-child
+                    &:last-child
+
+/* Columns: Automatico, Eléctrico, Lustramuebles, Renovadores
+.columns
+    .column
+        background-color: $lightGray
+        .header
+            width: 100%
+            height: 320px
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 1
+                background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                position: relative
+                z-index: 2
+                margin-bottom: 12px
+                // width: 54%
+                height: 240px
+        .body
+            padding-bottom: 46px
+            .selector
+                position: relative
+                // &::before
+                //     position: absolute
+                //     content: '‣'
+                //     color: black
+                //     display: flex
+                //     justify-content: flex-start
+                //     padding-top: 1%
+                //     padding-left: 6px
+                //     font-size: 46px
+                //     cursor: pointer
+                //     right: 0
+                //     width: 36px
+                //     height: 100%
+                //     background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                //     z-index: 3
+                .in
+                    display: flex
+                    margin: auto
+                    max-width: 65%
+                    flex-wrap: nowrap
+                    align-content: center
+                    justify-content: space-between
+                    // overflow-x: scroll
+                    // overflow-y: hidden
+                    padding:
+                        top: 20px
+                        bottom: 24px
+                    width: auto
+                    background-color: $lightGray
+                    position: relative
+                    // z-index: 2
+                    // -ms-overflow-style: none
+                    // overflow: -moz-scrollbars-none
+                    // &::-webkit-scrollbar
+                    //     display: none
+                    //     width: 0 !important
+                    //     background: transparent !important
+                    .item
+                        // z-index: 2
+                        cursor: pointer
+                        // padding:
+                        //     left: 38px
+                        //     right: 38px
+                        text-align: center
+                        box-sizing: border-box
+                        img
+                            // max-width: 100%
+                            height: 24px
+                            margin-bottom: 6px
+                        // &:first-child
+                        //     padding-left: 56px
+                        // &:last-child
+                        //     padding-right: 72px
+            .data
+                text-align: center
+                margin: auto
+                width: 84%
+                h4
+                    margin-bottom: 16px
+                p
+                    
+@media (min-width: 768px)
+    .columns
+        display: flex
+        .column
+            width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                // height: 320px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    // height: 240px
+            .body
+                padding-bottom: 52px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        padding:
+                            top: 24px
+                            bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 74%
+                    h4
+                        // margin-bottom: 14px
+                    p
+                    
+@media (min-width: 900px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                // height: 320px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    // height: 240px
+            .body
+                padding-bottom: 62px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 56%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 70%
+                    h4
+                        margin-bottom: 18px
+                    p
+                    
+@media (min-width: 1200px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                height: 420px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    height: 280px
+            .body
+                padding-bottom: 76px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 48%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 60%
+                    h4
+                        // margin-bottom: 18px
+                    p
+
+/* Desinfectantes
+.desinfectantes
+    background-color: $lightGray
+    .img
+        width: 100%
+        height: 220px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        z-index: 2
+        &::before
+            content: ''
+            height: 40px
+            width: 100%
+            position: absolute
+            background-size: cover
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 2
+            background-repeat: no-repeat
+            background-image: url('../img/curves-1.png')
+    .data
+        position: relative
+        text-align: center
+        margin: auto
+        width: 80%
+        position: relative
+        margin-top: -110px
+        padding-bottom: 48px
+        z-index: 3
+        img
+            width: 90%
+            margin-bottom: 18px
+        h1
+        p
+
+@media (min-width: 768px)
+    .desinfectantes
+        // background-color: $lightGray
+        .img
+            // width: 100%
+            height: 300px
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            // position: relative
+            // z-index: 2
+            &::before
+                // content: ''
+                // height: 40px
+                // width: 100%
+                // position: absolute
+                // background-size: cover
+                // bottom: 0
+                // left: 0
+                // right: 0
+                // z-index: 2
+                // background-repeat: no-repeat
+                // background-image: url('../img/curves-1.png')
+        .data
+            // position: relative
+            // text-align: center
+            // margin: auto
+            width: 64%
+            // position: relative
+            margin-top: -140px
+            padding-bottom: 52px
+            // z-index: 3
+            img
+                width: 80%
+                // margin-bottom: 18px
+            h1
+            p
+
+@media (min-width: 900px)
+    .desinfectantes
+        // background-color: $lightGray
+        .img
+            // width: 100%
+            height: 350px
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            // position: relative
+            // z-index: 2
+            &::before
+                // content: ''
+                // height: 40px
+                // width: 100%
+                // position: absolute
+                // background-size: cover
+                // bottom: 0
+                // left: 0
+                // right: 0
+                // z-index: 2
+                // background-repeat: no-repeat
+                // background-image: url('../img/curves-1.png')
+        .data
+            // position: relative
+            // text-align: center
+            // margin: auto
+            width: 55%
+            // position: relative
+            margin-top: -190px
+            padding-bottom: 72px
+            // z-index: 3
+            img
+                width: 80%
+                margin-bottom: 20px
+            h1
+            p
+
+@media (min-width: 1200px)
+    .desinfectantes
+        // background-color: $lightGray
+        .img
+            // width: 100%
+            height: 400px
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            // position: relative
+            // z-index: 2
+            &::before
+                // content: ''
+                height: 70px
+                // width: 100%
+                // position: absolute
+                // background-size: cover
+                // bottom: 0
+                // left: 0
+                // right: 0
+                // z-index: 2
+                // background-repeat: no-repeat
+                // background-image: url('../img/curves-1.png')
+        .data
+            // position: relative
+            // text-align: center
+            // margin: auto
+            width: 45%
+            // position: relative
+            margin-top: -240px
+            padding-bottom: 78px
+            // z-index: 3
+            img
+                width: 100%
+                margin-bottom: 28px
+            h1
+            p
+
+/* Productos Líderes
+.lideres
+    background-color: $lightGray
+    .header
+        width: 100%
+        height: 260px
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 1
+            background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+        img
+            position: relative
+            z-index: 2
+            margin-bottom: 22px
+            height: 170px
+    .body
+        text-align: center
+        padding-bottom: 48px
+        h1
+        p
+
+@media (min-width: 768px)
+    .lideres
+        // background-color: $lightGray
+        .header
+            // width: 100%
+            height: 380px
+            // position: relative
+            // display: flex
+            // justify-content: center
+            // align-items: flex-end
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            &::before
+                // content: ''
+                // position: absolute
+                // width: 100%
+                // height: 100%
+                // z-index: 1
+                // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                // position: relative
+                // z-index: 2
+                // margin-bottom: 22px
+                height: 260px
+        .body
+            width: 70%
+            padding-bottom: 52px
+            margin:
+                left: auto
+                right: auto
+            // text-align: center
+            // padding-bottom: 48px
+            h1
+            p
+
+@media (min-width: 900px)
+    .lideres
+        // background-color: $lightGray
+        .header
+            // width: 100%
+            // height: 380px
+            // position: relative
+            // display: flex
+            // justify-content: center
+            // align-items: flex-end
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            &::before
+                // content: ''
+                // position: absolute
+                // width: 100%
+                // height: 100%
+                // z-index: 1
+                // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                // position: relative
+                // z-index: 2
+                // margin-bottom: 22px
+                height: 260px
+        .body
+            width: 50%
+            padding-bottom: 56px
+            // margin:
+            //     left: auto
+            //     right: auto
+            // text-align: center
+            // padding-bottom: 48px
+            h1
+            p
+
+@media (min-width: 1200px)
+    .lideres
+        // background-color: $lightGray
+        .header
+            // width: 100%
+            height: 500px
+            // position: relative
+            // display: flex
+            // justify-content: center
+            // align-items: flex-end
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            &::before
+                // content: ''
+                // position: absolute
+                // width: 100%
+                // height: 100%
+                // z-index: 1
+                // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                // position: relative
+                // z-index: 2
+                // margin-bottom: 22px
+                height: 320px
+        .body
+            width: 45%
+            padding-bottom: 74px
+            // margin:
+            //     left: auto
+            //     right: auto
+            // text-align: center
+            // padding-bottom: 48px
+            h1
+            p
 
 /* Contacto
 .contacto
+    background-color: $ultraLightBlue
+    padding:
+        top: 48px
+        bottom: 40px
     .in
         .data
+            margin-bottom: 24px
+            text-align: center
             h1
             p
         .form
             form
                 input, textarea
+                    background-color: transparent
+                    outline: none
+                    appearance: none
+                    box-shadow: none
+                    border-radius: 2px
+                    border: solid 1px $darkBlue
+                    padding: 8px 14px
                     width: 100%
+                    font-size: 14px
+                    color: #8387A3
+                    margin-bottom: 6px
                     box-sizing: border-box
+                    &::-webkit-input-placeholder
+                    &:-ms-input-placeholder
+                    &::placeholder
+                        color: #8387A3
+                input[type="submit"]
+                    background-color: $blue
+                    border: solid 1px $blue
+                    color: white
+                    cursor: pointer
+                    font-weight: 900
+                textarea
+                    height: 120px
+
+@media (min-width: 768px)
+    .contacto
+        // background-color: $ultraLightBlue
+        padding:
+            top: 60px
+            bottom: 42px
+        .in
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            .data
+                width: 30%
+                // margin-bottom: 24px
+                text-align: left
+                h1
+                p
+            .form
+                width: 60%
+                form
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    input, textarea
+                        font-family: inherit
+                        // background-color: transparent
+                        // outline: none
+                        // appearance: none
+                        // box-shadow: none
+                        // border-radius: 2px
+                        // border: solid 1px $darkBlue
+                        // padding: 8px 14px
+                        // width: 100%
+                        // font-size: 14px
+                        // color: #8387A3
+                        margin-bottom: 10px
+                        // box-sizing: border-box
+                        &::-webkit-input-placeholder
+                        &:-ms-input-placeholder
+                        &::placeholder
+                        //     color: #8387A3
+                    input
+                        width: 49%
+                    input[type="submit"]
+                        width: 100%
+                        // background-color: $blue
+                        // border: solid 1px $blue
+                        // color: white
+                        // font-weight: 900
+                    textarea
+                        width: 100%
+                        height: 100px
+
+@media (min-width: 900px)
+    .contacto
+        // background-color: $ultraLightBlue
+        // padding:
+            // top: 60px
+            // bottom: 42px
+        .in
+            // display: flex
+            // justify-content: space-between
+            // flex-wrap: wrap
+            width: 84%
+            margin:
+                left: auto
+                right: auto
+            .data
+                // width: 30%
+                // margin-bottom: 24px
+                // text-align: left
+                h1
+                p
+            .form
+                // width: 60%
+                form
+                    // display: flex
+                    // justify-content: space-between
+                    // flex-wrap: wrap
+                    input, textarea
+                        // font-family: inherit
+                        // background-color: transparent
+                        // outline: none
+                        // appearance: none
+                        // box-shadow: none
+                        // border-radius: 2px
+                        // border: solid 1px $darkBlue
+                        // padding: 8px 14px
+                        // width: 100%
+                        // font-size: 14px
+                        // color: #8387A3
+                        // margin-bottom: 10px
+                        // box-sizing: border-box
+                        &::-webkit-input-placeholder
+                        &:-ms-input-placeholder
+                        &::placeholder
+                        //     color: #8387A3
+                    input
+                        // width: 49%
+                    input[type="submit"]
+                        // width: 100%
+                        // background-color: $blue
+                        // border: solid 1px $blue
+                        // color: white
+                        // font-weight: 900
+                    textarea
+                        // width: 100%
+                        // height: 100px
+
+@media (min-width: 1200px)
+    .contacto
+        // background-color: $ultraLightBlue
+        padding:
+            top: 72px
+            bottom: 50px
+        .in
+            // display: flex
+            // justify-content: space-between
+            // flex-wrap: wrap
+            width: 74%
+            // margin:
+            //     left: auto
+            //     right: auto
+            .data
+                width: 32%
+                // margin-bottom: 24px
+                // text-align: left
+                h1
+                p
+            .form
+                width: 55%
+                form
+                    // display: flex
+                    // justify-content: space-between
+                    // flex-wrap: wrap
+                    input, textarea
+                        // font-family: inherit
+                        // background-color: transparent
+                        // outline: none
+                        // appearance: none
+                        // box-shadow: none
+                        // border-radius: 2px
+                        // border: solid 1px $darkBlue
+                        // padding: 8px 14px
+                        // width: 100%
+                        // font-size: 14px
+                        // color: #8387A3
+                        // margin-bottom: 10px
+                        // box-sizing: border-box
+                        &::-webkit-input-placeholder
+                        &:-ms-input-placeholder
+                        &::placeholder
+                        //     color: #8387A3
+                    input
+                        // width: 49%
+                    input[type="submit"]
+                        // width: 100%
+                        // background-color: $blue
+                        // border: solid 1px $blue
+                        // color: white
+                        // font-weight: 900
+                    textarea
+                        // width: 100%
+                        height: 140px
+// 
+/* Footer
+footer
+    background-color: $grayBlue
+    p
+        color: $lightBlue
+        text-align: center
+        padding: 16px 0
+        font-size: 12px
