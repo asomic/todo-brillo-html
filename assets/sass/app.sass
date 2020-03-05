@@ -115,6 +115,27 @@ p
             left: 3em
             right: 3em
 
+@media (min-width: 1400px)
+    .pd-lr
+        padding:
+            left: 4em
+            right: 4em
+
+@media (min-width: 1600px)
+    .pd-lr
+        padding:
+            left: 10em
+            right: 10em
+
+@media (min-width: 1800px)
+    .pd-lr
+        max-width: 1000px
+        margin-left: auto
+        margin-right: auto
+        padding:
+            left: 0
+            right: 0
+
 /* Hero
 .hero
     width: 100%
@@ -289,6 +310,51 @@ p
             // background-color: black
             // opacity: 0.0
 
+@media (min-width: 1400px)
+    .hero
+        // width: 100%
+        height: 100vh
+        // background-image: url('../img/hero-back.jpg')
+        // background-size: cover
+        // background-position: center
+        // position: relative
+        // z-index: 8
+        // box-sizing: border-box
+        &::before
+            // content: ''
+            // position: absolute
+            // width: 100%
+            // height: 100%
+            // background-color: rgba(#092652, 0.35)
+        .in
+            // position: relative
+            // z-index: 10
+            // text-align: center
+            // padding-bottom: 1em
+            width: 50%
+            // margin-left: auto
+            // margin-right: auto
+            // height: 100%
+            // box-sizing: border-box
+            // display: flex
+            // flex-wrap: wrap
+            // align-content: center
+            // justify-content: center
+            // align-items: center
+            img
+                // width: 180px
+                // margin-bottom: 1em
+            h3
+                width: 100%
+                // color: white
+        .on
+            // width: 100%
+            // height: 100%
+            // position: absolute
+            // top: 0
+            // background-color: black
+            // opacity: 0.0
+
 /* Aromatizantes
 .aromatizantes
     width: 100%
@@ -356,6 +422,9 @@ p
         // overflow: hidden !important
         // height: 160px
         // cursor: move
+        margin:
+            left: auto
+            right: auto
         &::before
             position: absolute
             content: '‣'
@@ -378,6 +447,7 @@ p
             justify-content: flex-start
             overflow-x: scroll
             overflow-y: hidden
+            box-sizing: border-box
             cursor: move
             // padding-bottom: 24px
             padding:
@@ -459,18 +529,26 @@ p
                         p
         .selector
             // overflow: hidden
+            margin:
+                left: auto
+                right: auto
+            width: 84%
             &::before
-                padding-top: 7.5%
+                padding-top: 9.5%
             .in
-                margin:
-                    left: auto
-                    right: auto
-                width: 86%
+                width: 100%
+                padding:
+                    top: 30px
+                    bottom: 44px
                 &::-webkit-scrollbar
                 .item
+                    padding:
+                        left: 36px
+                        right: 36px
                     img
                     h4
                     &:first-child
+                        padding-left: 8px
                     &:last-child
 
 @media (min-width: 900px)
@@ -484,7 +562,7 @@ p
                     // top: -70px
                     // background-size: cover
                 .item-data
-                    margin-top: -32%
+                    margin-top: -30%
                     // flex-wrap: nowrap
                     width: 80%
                     // justify-content: space-between
@@ -496,7 +574,7 @@ p
                         &:before
                             // display: none
                         img
-                            width: 60%
+                            width: 64%
                     .text
                         // align-self: flex-end
                         // width: 64%
@@ -507,21 +585,24 @@ p
                         h1
                         p
         .selector
+            width: 78%
+            // width: 74%
             &::before
                 // padding-top: 7.5%
             .in
                 // margin:
                     // left: auto
                     // right: auto
-                // width: 86%
+                width: 100%
                 &::-webkit-scrollbar
                 .item
                     padding:
-                        left: 40px
-                        right: 40px
+                        left: 52px
+                        right: 52px
                     img
                     h4
                     &:first-child
+                        padding-left: 22px
                     &:last-child
 
 @media (min-width: 1200px)
@@ -558,22 +639,139 @@ p
                         h1
                         p
         .selector
+            // width: 70%
+            width: 74%
+            &::before
+                padding-top: 7.5%
+            .in
+                // margin:
+                    // left: auto
+                    // right: auto
+                width: 100%
+                &::-webkit-scrollbar
+                .item
+                    padding:
+                        left: 54px
+                        right: 54px
+                    img
+                    h4
+                    &:first-child
+                    &:last-child
+
+@media (min-width: 1400px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                // height: 400px
+            .aroma-data
+                &::before
+                    // top: -70px
+                    // background-size: cover
+                .item-data
+                    margin-top: -26%
+                    // flex-wrap: nowrap
+                    width: 74%
+                    // justify-content: space-between
+                    .img
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        // height: auto
+                        &:before
+                            // display: none
+                        img
+                            width: 56%
+                    .text
+                        // align-self: flex-end
+                        width: 62%
+                        // padding-right: 20px
+                        // text-align: left
+                        // box-sizing: border-box
+                        padding-bottom: 2.2em
+                        h1
+                        p
+        .selector
+            width: 70%
             &::before
                 // padding-top: 7.5%
             .in
                 // margin:
                     // left: auto
                     // right: auto
-                // width: 86%
+                // width: 100%
+                padding-top: 32px
+                padding-bottom: 48px
                 &::-webkit-scrollbar
                 .item
-                    // padding:
-                        // left: 40px
-                        // right: 40px
+                    padding:
+                        left: 54px
+                        right: 54px
                     img
                     h4
                     &:first-child
                     &:last-child
+
+@media (min-width: 1600px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                height: 480px
+            .aroma-data
+                &.pd-lr
+                    max-width: 100%
+                    padding:
+                        left: 10em
+                        right: 10em
+                &::before
+                    // top: -70px
+                    // background-size: cover
+                .item-data
+                    margin-top: -23%
+                    // flex-wrap: nowrap
+                    width: 74%
+                    // justify-content: space-between
+                    .img
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        // height: auto
+                        &:before
+                            // display: none
+                        img
+                            width: 48%
+                    .text
+                        // align-self: flex-end
+                        width: 62%
+                        padding-right: 12%
+                        // text-align: left
+                        // box-sizing: border-box
+                        padding-bottom: 2.2em
+                        h1
+                        p
+        .selector
+            // width: 64%
+            // padding-right: 14%
+            // box-sizing: border-box
+            &::before
+                padding-top: 5.5%
+            .in
+                // margin:
+                    // left: auto
+                    // right: auto
+                // width: 76%
+                &::-webkit-scrollbar
+                .item
+                    padding:
+                        left: 54px
+                        right: 54px
+                    img
+                    h4
+                    &:first-child
+                        // padding-left: 0px
+                    &:last-child
+                        padding-right: 160px
 
 /* Columns: Automatico, Eléctrico, Lustramuebles, Renovadores
 .columns
