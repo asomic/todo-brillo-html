@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Brillo</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
@@ -21,61 +22,96 @@
     <!-- Aromatizantes -->
     <section class="aromatizantes">
         <div class="aroma-info">
-            <div class="aroma-img" style="background-image: url('assets/img/es-backs/vanilla-back.jpg');"></div>
+            <div class="aroma-img"></div>
             <div class="aroma-data pd-lr">
-                <!-- <div class="item-img"></div> -->
                 <div class="item-data">
                     <div class="img">
-                        <img src="assets/img/aromatizantes/1.png">
                     </div>
                     <div class="text">
-                        <h1>Este es un mensaje que tiene que ver con el producto.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+                        <div class="standard">
+                            <h1>Brisa Marina loem ipsum dolorem sit amet</h1>
+                            <p>Brisa Marina Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="hawaiian">
+                            <h1>Hawaiian loem ipsum dolorem sit amet</h1>
+                            <p>Hawaiian Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="algodon">
+                            <h1>Algodón loem ipsum dolorem sit amet</h1>
+                            <p>Algodón Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="bambu">
+                            <h1>Bambú loem ipsum dolorem sit amet</h1>
+                            <p>Bambú Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="lavanda">
+                            <h1>Lavanda loem ipsum dolorem sit amet</h1>
+                            <p>Lavanda Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="floral">
+                            <h1>Floral loem ipsum dolorem sit amet</h1>
+                            <p>Floral Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="bebe">
+                            <h1>Bebé loem ipsum dolorem sit amet</h1>
+                            <p>Bebé Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="vainilla">
+                            <h1>Vainilla loem ipsum dolorem sit amet</h1>
+                            <p>Vainilla Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
+                        <div class="anti-tabaco">
+                            <h1>Anti Tabaco loem ipsum dolorem sit amet</h1>
+                            <p>Anti Tabaco Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="selector">
-            <div class="in pd-lr">
-
-                <div class="item">
-                    <img src="assets/img/aromatizantes/2.png">
-                    <h6>Brisa Marina</h6>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="ar-1">
+                        <img src="assets/img/aromatizantes/6.png">
+                        <h6>Brisa Marina</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-2">
+                        <img src="assets/img/aromatizantes/2.png">
+                        <h6>Hawaiian</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-3">
+                        <img src="assets/img/aromatizantes/3.png">
+                        <h6>Algodón</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-4">
+                        <img src="assets/img/aromatizantes/4.png">
+                        <h6>Bambú</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-5">
+                        <img src="assets/img/aromatizantes/5.png">
+                        <h6>Lavanda</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-6">
+                        <img src="assets/img/aromatizantes/1.png">
+                        <h6>Floral</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-7">
+                        <img src="assets/img/aromatizantes/7.png">
+                        <h6>Bebé</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-8">
+                        <img src="assets/img/aromatizantes/8.png">
+                        <h6>Vainilla</h6>
+                    </div>
+                    <div class="swiper-slide" id="ar-9">
+                        <img src="assets/img/aromatizantes/9.png">
+                        <h6>Anti Tabaco</h6>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/3.png">
-                    <h6>Hawaiian</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/4.png">
-                    <h6>Algodón</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/5.png">
-                    <h6>Bambú</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/6.png">
-                    <h6>Lavanda</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/7.png">
-                    <h6>Floral</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/8.png">
-                    <h6>Bebé</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/9.png">
-                    <h6>Vainilla</h6>
-                </div>
-                <div class="item">
-                    <img src="assets/img/aromatizantes/8.png">
-                    <h6>Anti Tabaco</h6>
-                </div>
-                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
+
         </div>
     </section>
     <!-- Division dos columnas -->
@@ -84,21 +120,26 @@
         <section class="column automatico">
             <div class="header" style="background-image: url('assets/img/es-backs/home-2.jpg');">
                 <img src="assets/img/automaticos/1.png" alt="">
+                <div class="badges"></div>
             </div>
             <div class="body">
                 <div class="selector">
                     <div class="in">
                         <div class="item">
                             <img src="assets/img/automaticos/lavanda.png">
+                            <div class="name a-1"><p>Lavanda</p></div>
                         </div>
                         <div class="item">
                             <img src="assets/img/automaticos/manzana-y-canela.png">
+                            <div class="name a-2"><p>Manzana y Canela</p></div>
                         </div>
                         <div class="item">
                             <img src="assets/img/automaticos/bebe.png">
+                            <div class="name a-3"><p>Bebé</p></div>
                         </div>
                         <div class="item">
                             <img src="assets/img/automaticos/brisa-marina.png">
+                            <div class="name a-4"><p>Brisa Marina</p></div>
                         </div>
                     </div>
                 </div>
@@ -112,21 +153,26 @@
         <section class="column electricos">
             <div class="header" style="background-image: url('assets/img/es-backs/home-1.jpg');">
                 <img src="assets/img/electricos/1.png">
+                <div class="badges"></div>
             </div>
             <div class="body">
                 <div class="selector">
                     <div class="in">
                         <div class="item">
                             <img src="assets/img/automaticos/lavanda.png">
+                            <div class="name e-1"><p>Lavanda</p></div>
                         </div>
                         <div class="item">
                             <img src="assets/img/automaticos/manzana-y-canela.png">
+                            <div class="name e-2"><p>Manzana y Canela</p></div>
                         </div>
                         <div class="item">
                             <img src="assets/img/automaticos/bebe.png">
+                            <div class="name e-3"><p>Bebé</p></div>
                         </div>
                         <div class="item">
                             <img src="assets/img/automaticos/brisa-marina.png">
+                            <div class="name e-4"><p>Brisa Marina</p></div>
                         </div>
                     </div>
                 </div>
@@ -207,6 +253,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

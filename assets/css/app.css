@@ -271,6 +271,9 @@ p {
   height: 36vh;
   background-position: center;
   background-size: cover;
+  background-color: #BACAE2;
+  transition: all ease 0.3s;
+  background-image: url("../img/aromatizantes/brisa-marina.jpg");
 }
 .aromatizantes .aroma-info .aroma-data {
   position: relative;
@@ -301,96 +304,265 @@ p {
   width: 94%;
 }
 .aromatizantes .aroma-info .aroma-data .item-data .img {
+  z-index: 1;
   margin-top: -24vh;
-  width: 200px;
+  width: 100%;
   overflow: hidden;
-  height: 400px;
+  height: 420px;
   margin-bottom: 0.4em;
   text-align: center;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/aromatizantes/6.png");
 }
 .aromatizantes .aroma-info .aroma-data .item-data .img:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
+  right: 0;
   background: linear-gradient(0deg, #fafafa 0%, rgba(250, 250, 250, 0) 51%);
 }
 .aromatizantes .aroma-info .aroma-data .item-data .img img {
   width: 80%;
 }
 .aromatizantes .aroma-info .aroma-data .item-data .text {
+  z-index: 2;
+  margin-top: -20%;
   width: 100%;
   text-align: center;
+}
+.aromatizantes .aroma-info .aroma-data .item-data .text .standard {
+  display: inherit;
+}
+.aromatizantes .aroma-info .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info .aroma-data .item-data .text .anti-tabaco {
+  display: none;
+}
+.aromatizantes .aroma-info.hawaiian .aroma-img {
+  background-image: url("../img/aromatizantes/hawaii.jpg");
+}
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/2.png");
+}
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .anti-tabaco {
+  display: none;
+}
+.aromatizantes .aroma-info.hawaiian .aroma-data .item-data .text .hawaiian {
+  display: inherit;
+}
+.aromatizantes .aroma-info.algodon .aroma-img {
+  background-image: url("../img/aromatizantes/algodon.jpg");
+}
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/3.png");
+}
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .hawaiian {
+  display: none;
+}
+.aromatizantes .aroma-info.algodon .aroma-data .item-data .text .algodon {
+  display: inherit;
+}
+.aromatizantes .aroma-info.bambu .aroma-img {
+  background-image: url("../img/aromatizantes/bambu.jpg");
+}
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/4.png");
+}
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .hawaiian {
+  display: none;
+}
+.aromatizantes .aroma-info.bambu .aroma-data .item-data .text .bambu {
+  display: inherit;
+}
+.aromatizantes .aroma-info.lavanda .aroma-img {
+  background-image: url("../img/aromatizantes/lavanda.jpg");
+}
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/5.png");
+}
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .bambu {
+  display: none;
+}
+.aromatizantes .aroma-info.lavanda .aroma-data .item-data .text .lavanda {
+  display: inherit;
+}
+.aromatizantes .aroma-info.floral .aroma-img {
+  background-image: url("../img/aromatizantes/floral.jpg");
+}
+.aromatizantes .aroma-info.floral .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/1.png");
+}
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .lavanda {
+  display: none;
+}
+.aromatizantes .aroma-info.floral .aroma-data .item-data .text .floral {
+  display: inherit;
+}
+.aromatizantes .aroma-info.bebe .aroma-img {
+  background-image: url("../img/aromatizantes/bebe.jpg");
+}
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/7.png");
+}
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .floral {
+  display: none;
+}
+.aromatizantes .aroma-info.bebe .aroma-data .item-data .text .bebe {
+  display: inherit;
+}
+.aromatizantes .aroma-info.vainilla .aroma-img {
+  background-image: url("../img/aromatizantes/vainilla.jpg");
+}
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/8.png");
+}
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .bebe {
+  display: none;
+}
+.aromatizantes .aroma-info.vainilla .aroma-data .item-data .text .vainilla {
+  display: inherit;
+}
+.aromatizantes .aroma-info.anti-tabaco .aroma-img {
+  background-image: url("../img/aromatizantes/anti-tabaco.jpg");
+}
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/9.png");
+}
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .standard,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .brisa-marina,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .vainilla {
+  display: none;
+}
+.aromatizantes .aroma-info.anti-tabaco .aroma-data .item-data .text .anti-tabaco {
+  display: inherit;
+}
+.aromatizantes .aroma-info.brisa-marina .aroma-img {
+  background-image: url("../img/aromatizantes/brisa-marina.jpg");
+}
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .img {
+  background-image: url("../img/aromatizantes/6.png");
+}
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .algodon,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .hawaiian,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .bambu,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .lavanda,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .floral,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .bebe,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .anti-tabaco,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .vainilla,
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .brisa-marina {
+  display: none;
+}
+.aromatizantes .aroma-info.brisa-marina .aroma-data .item-data .text .standard {
+  display: inherit;
 }
 .aromatizantes .selector {
-  position: relative;
-  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-}
-.aromatizantes .selector::before {
-  position: absolute;
-  content: "‣";
-  color: black;
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 17.5%;
-  padding-left: 6px;
-  font-size: 46px;
-  cursor: pointer;
-  right: 0;
-  width: 36px;
-  height: 100%;
-  background: linear-gradient(266deg, #fafafa 27%, rgba(250, 250, 250, 0) 100%);
-  z-index: 3;
-}
-.aromatizantes .selector .in {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: flex-start;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  box-sizing: border-box;
-  cursor: move;
-  padding-top: 30px;
-  padding-bottom: 34px;
-  width: auto;
-  background-color: #FAFAFA;
-  position: relative;
-  z-index: 2;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-}
-.aromatizantes .selector .in::-webkit-scrollbar {
-  display: none;
-  width: 0 !important;
-  background: transparent !important;
-}
-.aromatizantes .selector .in .item {
-  z-index: 2;
-  padding-left: 28px;
-  padding-right: 28px;
-  text-align: center;
-  box-sizing: border-box;
-}
-.aromatizantes .selector .in .item img {
-  max-width: 100%;
-  height: 120px;
-  margin-bottom: 6px;
-}
-.aromatizantes .selector .in .item h4 {
-  text-align: center;
-  margin: auto;
-  display: block;
   width: 100%;
+  position: relative;
+  height: 170px;
+  padding-top: 30px;
+  padding-bottom: 28px;
 }
-.aromatizantes .selector .in .item:first-child {
-  padding-left: 32px;
+.aromatizantes .selector .swiper-container {
+  width: 100%;
+  height: 100%;
 }
-.aromatizantes .selector .in .item:last-child {
-  padding-right: 58px;
+.aromatizantes .selector .swiper-container .swiper-wrapper .swiper-slide {
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.aromatizantes .selector .swiper-container .swiper-wrapper .swiper-slide img {
+  height: 65%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.aromatizantes .selector .swiper-container .swiper-wrapper .swiper-slide h6 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30%;
+}
+.aromatizantes .selector .swiper-container .swiper-pagination {
+  bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -398,11 +570,11 @@ p {
     padding-bottom: 20px;
   }
   .aromatizantes .aroma-info .aroma-data::before {
-    top: -70px;
+    top: -60px;
     background-size: cover;
   }
   .aromatizantes .aroma-info .aroma-data .item-data {
-    margin-top: -40%;
+    margin-top: -32%;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
@@ -411,7 +583,6 @@ p {
     width: 35%;
     margin-top: 0;
     margin-bottom: 0;
-    height: auto;
   }
   .aromatizantes .aroma-info .aroma-data .item-data .img:before {
     display: none;
@@ -428,78 +599,57 @@ p {
     padding-bottom: 1.8em;
   }
   .aromatizantes .selector {
-    margin-left: auto;
-    margin-right: auto;
-    width: 84%;
-  }
-  .aromatizantes .selector::before {
-    padding-top: 9.5%;
-  }
-  .aromatizantes .selector .in {
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 44px;
-  }
-  .aromatizantes .selector .in .item {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-  .aromatizantes .selector .in .item:first-child {
-    padding-left: 8px;
+    width: 86%;
   }
 }
 @media (min-width: 900px) {
   .aromatizantes .aroma-info .aroma-img {
-    height: 400px;
+    height: 380px;
+  }
+  .aromatizantes .aroma-info .aroma-data::before {
+    top: -96px;
   }
   .aromatizantes .aroma-info .aroma-data .item-data {
     margin-top: -30%;
     width: 80%;
   }
-  .aromatizantes .aroma-info .aroma-data .item-data .img img {
-    width: 64%;
+  .aromatizantes .aroma-info .aroma-data .item-data .img {
+    height: 480px;
   }
   .aromatizantes .selector {
     width: 78%;
   }
-  .aromatizantes .selector .in {
-    width: 100%;
-  }
-  .aromatizantes .selector .in .item {
-    padding-left: 52px;
-    padding-right: 52px;
-  }
-  .aromatizantes .selector .in .item:first-child {
-    padding-left: 22px;
-  }
 }
 @media (min-width: 1200px) {
+  .aromatizantes .aroma-info .aroma-img {
+    height: 440px;
+  }
+  .aromatizantes .aroma-info .aroma-data::before {
+    top: -140px;
+    height: 160px;
+  }
   .aromatizantes .aroma-info .aroma-data .item-data {
     margin-top: -28%;
     width: 74%;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .img {
+    height: 500px;
   }
   .aromatizantes .aroma-info .aroma-data .item-data .text {
     width: 62%;
     padding-bottom: 2.2em;
   }
   .aromatizantes .selector {
-    width: 74%;
-  }
-  .aromatizantes .selector::before {
-    padding-top: 7.5%;
-  }
-  .aromatizantes .selector .in {
-    width: 100%;
-  }
-  .aromatizantes .selector .in .item {
-    padding-left: 54px;
-    padding-right: 54px;
+    width: 66%;
   }
 }
 @media (min-width: 1400px) {
   .aromatizantes .aroma-info .aroma-data .item-data {
-    margin-top: -26%;
+    margin-top: -27%;
     width: 74%;
+  }
+  .aromatizantes .aroma-info .aroma-data .item-data .img {
+    height: 520px;
   }
   .aromatizantes .aroma-info .aroma-data .item-data .img img {
     width: 56%;
@@ -509,15 +659,8 @@ p {
     padding-bottom: 2.2em;
   }
   .aromatizantes .selector {
-    width: 70%;
-  }
-  .aromatizantes .selector .in {
-    padding-top: 32px;
-    padding-bottom: 48px;
-  }
-  .aromatizantes .selector .in .item {
-    padding-left: 54px;
-    padding-right: 54px;
+    width: 100%;
+    max-width: 920px;
   }
 }
 @media (min-width: 1600px) {
@@ -540,16 +683,6 @@ p {
     width: 62%;
     padding-right: 12%;
     padding-bottom: 2.2em;
-  }
-  .aromatizantes .selector::before {
-    padding-top: 5.5%;
-  }
-  .aromatizantes .selector .in .item {
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-  .aromatizantes .selector .in .item:last-child {
-    padding-right: 160px;
   }
 }
 /* Columns: Automatico, Eléctrico, Lustramuebles, Renovadores */
@@ -586,11 +719,12 @@ p {
 }
 .columns .column .body .selector {
   position: relative;
+  margin-top: 14px;
 }
 .columns .column .body .selector .in {
   display: flex;
   margin: auto;
-  max-width: 65%;
+  max-width: 90%;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
@@ -599,11 +733,53 @@ p {
   width: auto;
   background-color: #FAFAFA;
   position: relative;
+  outline: none;
 }
 .columns .column .body .selector .in .item {
   cursor: pointer;
+  z-index: 99;
+  width: 20%;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+}
+.columns .column .body .selector .in .item .name {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 46px;
+  padding: 6px;
+  border-radius: 3px;
+  z-index: 4;
+  background-color: #3B4A5F;
+  transition: all ease 0.3s;
+}
+.columns .column .body .selector .in .item .name::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #3B4A5F;
+  bottom: -4px;
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+.columns .column .body .selector .in .item .name p {
+  width: auto;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 110%;
+}
+.columns .column .body .selector .in .item:hover .name, .columns .column .body .selector .in .item:focus .name {
+  opacity: 1;
+  visibility: visible;
 }
 .columns .column .body .selector .in .item img {
   height: 24px;
@@ -617,6 +793,81 @@ p {
 .columns .column .body .data h4 {
   margin-bottom: 16px;
 }
+.columns .column.automatico .header img {
+  margin-left: -6px;
+}
+.columns .column.automatico .header .badges {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.columns .column.automatico .header .badges::before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top: -5%;
+  left: 142px;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin-top: 14%;
+  background-color: transparent;
+  background-image: url("../img/automaticos/disparos.png");
+  background-position: center;
+  background-size: cover;
+}
+.columns .column.automatico .header .badges::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: url("../img/automaticos/dias.png");
+  background-position: center;
+  background-size: cover;
+}
+.columns .column.electricos .header .badges {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.columns .column.electricos .header .badges::before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 105px;
+  height: 67px;
+  margin: auto;
+  right: 0;
+  left: 190px;
+  top: 17%;
+  background-color: transparent;
+  background-image: url("../img/electricos/aceites-naturales.png");
+  background-position: center;
+  background-size: cover;
+}
+.columns .column.electricos .header .badges::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  height: 174px;
+  margin: auto;
+  bottom: -52px;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: url("../img/electricos/sensaciones.png");
+  background-position: center;
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
   .columns {
     display: flex;
@@ -640,7 +891,7 @@ p {
     padding-bottom: 62px;
   }
   .columns .column .body .selector .in {
-    max-width: 56%;
+    max-width: 70%;
   }
   .columns .column .body .data {
     width: 70%;
@@ -648,8 +899,34 @@ p {
   .columns .column .body .data h4 {
     margin-bottom: 18px;
   }
+  .columns .column.automatico .header .badges::before {
+    top: -10%;
+  }
 }
 @media (min-width: 1200px) {
+  .columns .column .header {
+    height: 420px;
+  }
+  .columns .column .header img {
+    height: 280px;
+  }
+  .columns .column .body {
+    padding-bottom: 76px;
+  }
+  .columns .column .body .selector .in {
+    max-width: 66%;
+  }
+  .columns .column .body .data {
+    width: 60%;
+  }
+  .columns .column.automatico .header .badges::before {
+    top: 0%;
+  }
+  .columns .column.electricos .header .badges::before {
+    top: 27%;
+  }
+}
+@media (min-width: 1440px) {
   .columns .column .header {
     height: 420px;
   }
@@ -664,6 +941,29 @@ p {
   }
   .columns .column .body .data {
     width: 60%;
+  }
+  .columns .column.automatico .header .badges::before {
+    top: -2%;
+  }
+}
+@media (min-width: 1600px) {
+  .columns .column .header {
+    height: 420px;
+  }
+  .columns .column .header img {
+    height: 280px;
+  }
+  .columns .column .body {
+    padding-bottom: 76px;
+  }
+  .columns .column .body .selector .in {
+    max-width: 48%;
+  }
+  .columns .column .body .data {
+    width: 60%;
+  }
+  .columns .column.automatico .header .badges::before {
+    top: -4%;
   }
 }
 /* Desinfectantes */
@@ -735,7 +1035,7 @@ p {
 }
 @media (min-width: 1200px) {
   .desinfectantes .img {
-    height: 400px;
+    height: 420px;
   }
   .desinfectantes .img::before {
     height: 70px;
@@ -746,8 +1046,8 @@ p {
     padding-bottom: 78px;
   }
   .desinfectantes .data img {
-    width: 100%;
-    margin-bottom: 28px;
+    width: 96%;
+    margin-bottom: 30px;
   }
 }
 /* Productos Líderes */

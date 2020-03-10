@@ -180,180 +180,45 @@ p
 
 @media (min-width: 768px)
     .hero
-        // width: 100%
-        // height: 100vh
-        // background-image: url('../img/hero-back.jpg')
-        // background-size: cover
-        // background-position: center
-        // position: relative
-        // z-index: 8
-        // box-sizing: border-box
         &::before
-            // content: ''
-            // position: absolute
-            // width: 100%
-            // height: 100%
-            // background-color: rgba(#092652, 0.35)
         .in
-            // position: relative
-            // z-index: 10
-            // text-align: center
-            // padding-bottom: 1em
             width: 64%
             margin-left: auto
             margin-right: auto
-            // height: 100%
-            // box-sizing: border-box
-            // display: flex
-            // flex-wrap: wrap
-            // align-content: center
-            // justify-content: center
-            // align-items: center
             img
-                // width: 120px
-                // margin-bottom: 0.8em
             h3
-                // color: white
         .on
-            // width: 100%
-            // height: 100%
-            // position: absolute
-            // top: 0
-            // background-color: black
-            // opacity: 0.0
 
 @media (min-width: 900px)
     .hero
-        // width: 100%
-        // height: 100vh
-        // background-image: url('../img/hero-back.jpg')
-        // background-size: cover
-        // background-position: center
-        // position: relative
-        // z-index: 8
-        // box-sizing: border-box
         &::before
-            // content: ''
-            // position: absolute
-            // width: 100%
-            // height: 100%
-            // background-color: rgba(#092652, 0.35)
         .in
-            // position: relative
-            // z-index: 10
-            // text-align: center
-            // padding-bottom: 1em
-            // width: 64%
-            // margin-left: auto
-            // margin-right: auto
-            // height: 100%
-            // box-sizing: border-box
-            // display: flex
-            // flex-wrap: wrap
-            // align-content: center
-            // justify-content: center
-            // align-items: center
             img
-                // width: 120px
-                // margin-bottom: 0.8em
             h3
-                // color: white
         .on
-            // width: 100%
-            // height: 100%
-            // position: absolute
-            // top: 0
-            // background-color: black
-            // opacity: 0.0
 
 @media (min-width: 1200px)
     .hero
-        // width: 100%
         height: 100vh
-        // background-image: url('../img/hero-back.jpg')
-        // background-size: cover
-        // background-position: center
-        // position: relative
-        // z-index: 8
-        // box-sizing: border-box
         &::before
-            // content: ''
-            // position: absolute
-            // width: 100%
-            // height: 100%
-            // background-color: rgba(#092652, 0.35)
         .in
-            // position: relative
-            // z-index: 10
-            // text-align: center
-            // padding-bottom: 1em
             width: 60%
-            // margin-left: auto
-            // margin-right: auto
-            // height: 100%
-            // box-sizing: border-box
-            // display: flex
-            // flex-wrap: wrap
-            // align-content: center
-            // justify-content: center
-            // align-items: center
             img
                 width: 180px
                 margin-bottom: 1em
             h3
-                // color: white
         .on
-            // width: 100%
-            // height: 100%
-            // position: absolute
-            // top: 0
-            // background-color: black
-            // opacity: 0.0
 
 @media (min-width: 1400px)
     .hero
-        // width: 100%
         height: 100vh
-        // background-image: url('../img/hero-back.jpg')
-        // background-size: cover
-        // background-position: center
-        // position: relative
-        // z-index: 8
-        // box-sizing: border-box
         &::before
-            // content: ''
-            // position: absolute
-            // width: 100%
-            // height: 100%
-            // background-color: rgba(#092652, 0.35)
         .in
-            // position: relative
-            // z-index: 10
-            // text-align: center
-            // padding-bottom: 1em
             width: 50%
-            // margin-left: auto
-            // margin-right: auto
-            // height: 100%
-            // box-sizing: border-box
-            // display: flex
-            // flex-wrap: wrap
-            // align-content: center
-            // justify-content: center
-            // align-items: center
             img
-                // width: 180px
-                // margin-bottom: 1em
             h3
                 width: 100%
-                // color: white
         .on
-            // width: 100%
-            // height: 100%
-            // position: absolute
-            // top: 0
-            // background-color: black
-            // opacity: 0.0
 
 /* Aromatizantes
 .aromatizantes
@@ -365,6 +230,9 @@ p
             height: 36vh
             background-position: center
             background-size: cover
+            background-color: $lightBlue
+            transition: all ease 0.3s
+            background-image: url('../img/aromatizantes/brisa-marina.jpg')
         .aroma-data
             position: relative
             z-index: 1
@@ -394,117 +262,277 @@ p
                 width: 94%
                 // justify-content: space-between
                 .img
+                    z-index: 1
                     margin-top: -24vh
-                    width: 200px
+                    width: 100%
                     // height: 200px
                     overflow: hidden
-                    height: 400px
+                    height: 420px
                     // height: 100vw
                     margin-bottom: 0.4em
                     text-align: center
                     position: relative
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-image: url('../img/aromatizantes/6.png')
                     &:before
                         content: ''
                         position: absolute
                         width: 100%
                         height: 100%
+                        left: 0
+                        right: 0
                         background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 51%)
                     img
                         width: 80%
                 .text
+                    z-index: 2
+                    margin-top: -20%
                     width: 100%
                     text-align: center
                     h1
                     p
+                    .standard
+                        display: inherit
+                    .brisa-marina
+                    .hawaiian,
+                    .algodon,
+                    .bambu,
+                    .lavanda,
+                    .floral,
+                    .bebe,
+                    .vainilla,
+                    .anti-tabaco
+                        display: none
+        &.hawaiian
+            .aroma-img
+                background-image: url('../img/aromatizantes/hawaii.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/2.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .algodon,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco
+                            display: none
+                        .hawaiian
+                            display: inherit
+        &.algodon
+            .aroma-img
+                background-image: url('../img/aromatizantes/algodon.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/3.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .hawaiian
+                            display: none
+                        .algodon
+                            display: inherit
+        &.bambu
+            .aroma-img
+                background-image: url('../img/aromatizantes/bambu.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/4.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian
+                            display: none
+                        .bambu
+                            display: inherit
+        &.lavanda
+            .aroma-img
+                background-image: url('../img/aromatizantes/lavanda.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/5.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu
+                            display: none
+                        .lavanda
+                            display: inherit
+        &.floral
+            .aroma-img
+                background-image: url('../img/aromatizantes/floral.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/1.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda
+                            display: none
+                        .floral
+                            display: inherit
+        &.bebe
+            .aroma-img
+                background-image: url('../img/aromatizantes/bebe.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/7.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral
+                            display: none
+                        .bebe
+                            display: inherit
+        &.vainilla
+            .aroma-img
+                background-image: url('../img/aromatizantes/vainilla.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/8.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe
+                            display: none
+                        .vainilla
+                            display: inherit
+        &.anti-tabaco
+            .aroma-img
+                background-image: url('../img/aromatizantes/anti-tabaco.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/9.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla
+                            display: none
+                        .anti-tabaco
+                            display: inherit
+        &.brisa-marina
+            .aroma-img
+                background-image: url('../img/aromatizantes/brisa-marina.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/6.png')
+                    .text
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .anti-tabaco,
+                        .vainilla,
+                        .brisa-marina
+                            display: none
+                        .standard
+                            display: inherit
     .selector
-        position: relative
-        overflow: hidden
-        // overflow: hidden !important
-        // height: 160px
-        // cursor: move
         margin:
             left: auto
             right: auto
-        &::before
-            position: absolute
-            content: '‣'
-            color: black
-            display: flex
-            justify-content: flex-start
-            padding-top: 17.5%
-            padding-left: 6px
-            font-size: 46px
-            cursor: pointer
-            right: 0
-            width: 36px
+        width: 100%
+        position: relative
+        height: 170px
+        padding:
+            top: 30px
+            bottom: 28px
+        .swiper-container
+            width: 100%
             height: 100%
-            background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
-            z-index: 3
-        .in
-            display: flex
-            flex-wrap: nowrap
-            align-content: center
-            justify-content: flex-start
-            overflow-x: scroll
-            overflow-y: hidden
-            box-sizing: border-box
-            cursor: move
-            // padding-bottom: 24px
-            padding:
-                top: 30px
-                bottom: 34px
-            // overflow: hidden
-            // height: 160px
-            width: auto
-            // height: 100%
-            background-color: $lightGray
-            // box-sizing: border-box
-            position: relative
-            z-index: 2
-            -ms-overflow-style: none
-            overflow: -moz-scrollbars-none
-            &::-webkit-scrollbar
-                display: none
-                width: 0 !important
-                background: transparent !important
-            .item
-                z-index: 2
-                // margin-right: 52px
-                // cursor: pointer
-                padding:
-                    left: 28px
-                    right: 28px
-                text-align: center
-                box-sizing: border-box
-                // padding:
-                //     left: 12px
-                //     right: 12px
-                img
-                    max-width: 100%
-                    height: 120px
-                    margin-bottom: 6px
-                h4
+            .swiper-wrapper
+                .swiper-slide
+                    cursor: pointer
                     text-align: center
-                    margin: auto
-                    display: block
-                    width: 100%
-                &:first-child
-                    padding-left: 32px
-                &:last-child
-                    padding-right: 58px
+                    font-size: 18px
+                    background: transparent
+                    display: flex
+                    // align-items: center
+                    flex-wrap: wrap
+                    box-sizing: border-box
+                    justify-content: center
+                    img
+                        height: 65%
+                        margin-bottom: 10px
+                        box-sizing: border-box
+                    h6
+                        box-sizing: border-box
+                        width: 100%
+                        height: 30%
+            .swiper-pagination
+                // top: 10px
+                bottom: 0px
 
 @media (min-width: 768px)
     .aromatizantes
         padding-bottom: 20px
         .aroma-info
             .aroma-img
-                // height: 40vh
             .aroma-data
                 &::before
-                    top: -70px
+                    top: -60px
+                    // right: 0
                     background-size: cover
                 .item-data
-                    margin-top: -40%
+                    margin-top: -32%
                     flex-wrap: nowrap
                     width: 100%
                     justify-content: space-between
@@ -512,7 +540,7 @@ p
                         width: 35%
                         margin-top: 0
                         margin-bottom: 0
-                        height: auto
+                        // height: auto
                         &:before
                             display: none
                         img
@@ -528,92 +556,55 @@ p
                         h1
                         p
         .selector
-            // overflow: hidden
-            margin:
-                left: auto
-                right: auto
-            width: 84%
-            &::before
-                padding-top: 9.5%
-            .in
-                width: 100%
-                padding:
-                    top: 30px
-                    bottom: 44px
-                &::-webkit-scrollbar
-                .item
-                    padding:
-                        left: 36px
-                        right: 36px
-                    img
-                    h4
-                    &:first-child
-                        padding-left: 8px
-                    &:last-child
+            width: 86%
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slideenter
+                        img
+                            // height: 65%
+                            // margin-bottom: 10px
+                            // box-sizing: border-box
+                        h6
+                            // box-sizing: border-box
+                            // width: 100%
+                            // height: 30%
+                .swiper-pagination
+            
 
 @media (min-width: 900px)
     .aromatizantes
         // padding-bottom: 20px
         .aroma-info
             .aroma-img
-                height: 400px
+                height: 380px
             .aroma-data
                 &::before
-                    // top: -70px
-                    // background-size: cover
+                    top: -96px
                 .item-data
                     margin-top: -30%
-                    // flex-wrap: nowrap
                     width: 80%
-                    // justify-content: space-between
                     .img
-                        // width: 35%
-                        // margin-top: 0
-                        // margin-bottom: 0
-                        // height: auto
+                        height: 480px
                         &:before
-                            // display: none
-                        img
-                            width: 64%
+                        // img
+                        //     width: 64%
                     .text
-                        // align-self: flex-end
-                        // width: 64%
-                        // padding-right: 20px
-                        // text-align: left
-                        // box-sizing: border-box
-                        // padding-bottom: 1.8em
                         h1
                         p
         .selector
             width: 78%
-            // width: 74%
-            &::before
-                // padding-top: 7.5%
-            .in
-                // margin:
-                    // left: auto
-                    // right: auto
-                width: 100%
-                &::-webkit-scrollbar
-                .item
-                    padding:
-                        left: 52px
-                        right: 52px
-                    img
-                    h4
-                    &:first-child
-                        padding-left: 22px
-                    &:last-child
+
 
 @media (min-width: 1200px)
     .aromatizantes
         // padding-bottom: 20px
         .aroma-info
             .aroma-img
-                // height: 400px
+                height: 440px
             .aroma-data
                 &::before
-                    // top: -70px
+                    top: -140px
+                    height: 160px
                     // background-size: cover
                 .item-data
                     margin-top: -28%
@@ -621,6 +612,7 @@ p
                     width: 74%
                     // justify-content: space-between
                     .img
+                        height: 500px
                         // width: 35%
                         // margin-top: 0
                         // margin-bottom: 0
@@ -639,24 +631,8 @@ p
                         h1
                         p
         .selector
-            // width: 70%
-            width: 74%
-            &::before
-                padding-top: 7.5%
-            .in
-                // margin:
-                    // left: auto
-                    // right: auto
-                width: 100%
-                &::-webkit-scrollbar
-                .item
-                    padding:
-                        left: 54px
-                        right: 54px
-                    img
-                    h4
-                    &:first-child
-                    &:last-child
+            width: 66%
+
 
 @media (min-width: 1400px)
     .aromatizantes
@@ -669,7 +645,7 @@ p
                     // top: -70px
                     // background-size: cover
                 .item-data
-                    margin-top: -26%
+                    margin-top: -27%
                     // flex-wrap: nowrap
                     width: 74%
                     // justify-content: space-between
@@ -677,7 +653,7 @@ p
                         // width: 35%
                         // margin-top: 0
                         // margin-bottom: 0
-                        // height: auto
+                        height: 520px
                         &:before
                             // display: none
                         img
@@ -692,25 +668,9 @@ p
                         h1
                         p
         .selector
-            width: 70%
-            &::before
-                // padding-top: 7.5%
-            .in
-                // margin:
-                    // left: auto
-                    // right: auto
-                // width: 100%
-                padding-top: 32px
-                padding-bottom: 48px
-                &::-webkit-scrollbar
-                .item
-                    padding:
-                        left: 54px
-                        right: 54px
-                    img
-                    h4
-                    &:first-child
-                    &:last-child
+            width: 100%
+            max-width: 920px
+
 
 @media (min-width: 1600px)
     .aromatizantes
@@ -751,27 +711,6 @@ p
                         h1
                         p
         .selector
-            // width: 64%
-            // padding-right: 14%
-            // box-sizing: border-box
-            &::before
-                padding-top: 5.5%
-            .in
-                // margin:
-                    // left: auto
-                    // right: auto
-                // width: 76%
-                &::-webkit-scrollbar
-                .item
-                    padding:
-                        left: 54px
-                        right: 54px
-                    img
-                    h4
-                    &:first-child
-                        // padding-left: 0px
-                    &:last-child
-                        padding-right: 160px
 
 /* Columns: Automatico, Eléctrico, Lustramuebles, Renovadores
 .columns
@@ -804,25 +743,12 @@ p
             padding-bottom: 46px
             .selector
                 position: relative
-                // &::before
-                //     position: absolute
-                //     content: '‣'
-                //     color: black
-                //     display: flex
-                //     justify-content: flex-start
-                //     padding-top: 1%
-                //     padding-left: 6px
-                //     font-size: 46px
-                //     cursor: pointer
-                //     right: 0
-                //     width: 36px
-                //     height: 100%
-                //     background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
-                //     z-index: 3
+                margin-top: 14px
                 .in
                     display: flex
                     margin: auto
-                    max-width: 65%
+                    // max-width: 65%
+                    max-width: 90%
                     flex-wrap: nowrap
                     align-content: center
                     justify-content: space-between
@@ -841,14 +767,55 @@ p
                     //     display: none
                     //     width: 0 !important
                     //     background: transparent !important
+                    outline: none
                     .item
                         // z-index: 2
                         cursor: pointer
                         // padding:
                         //     left: 38px
                         //     right: 38px
+                        z-index: 99
+                        width: 20%
                         text-align: center
                         box-sizing: border-box
+                        position: relative
+                        .name
+                            opacity: 0
+                            visibility: hidden
+                            position: absolute
+                            left: 0
+                            right: 0
+                            margin: auto
+                            bottom: 46px
+                            padding: 6px
+                            border-radius: 3px
+                            z-index: 4
+                            background-color: $grayBlue
+                            transition: all ease 0.3s
+                            &::before
+                                content: ''
+                                position: absolute
+                                margin: auto
+                                left: 0
+                                right: 0
+                                width: 10px
+                                height: 10px
+                                background-color: $grayBlue
+                                bottom: -4px
+                                z-index: -1
+                                transform: rotate(-45deg)
+                            p
+                                width: auto
+                                color: white
+                                text-align: center
+                                font-size: 12px
+                                line-height: 110%
+                            // display: none
+                        &:hover,
+                        &:focus
+                            .name
+                                opacity: 1
+                                visibility: visible
                         img
                             // max-width: 100%
                             height: 24px
@@ -864,7 +831,83 @@ p
                 h4
                     margin-bottom: 16px
                 p
-                    
+        &.automatico
+            .header
+                img
+                    margin-left: -6px
+                .badges
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    &::before
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        top: -5%
+                        left: 142px
+                        right: 0
+                        margin: auto
+                        width: 100px
+                        height: 100px
+                        margin-top: 14%
+                        background-color: transparent
+                        background-image: url('../img/automaticos/disparos.png')
+                        background-position: center
+                        background-size: cover
+                    &::after
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        width: 60px
+                        height: 60px
+                        margin: auto
+                        bottom: 0
+                        right: 0
+                        left: 0
+                        // margin-top: 14%
+                        background-color: transparent
+                        background-image: url('../img/automaticos/dias.png')
+                        background-position: center
+                        background-size: cover
+        &.electricos
+            .header
+                img
+                .badges
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    &::before
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        width: 105px
+                        height: 67px
+                        margin: auto
+                        right: 0
+                        left: 190px
+                        // right: 18vw
+                        // right: 18%
+                        top: 17%
+                        background-color: transparent
+                        background-image: url('../img/electricos/aceites-naturales.png')
+                        background-position: center
+                        background-size: cover
+                    &::after
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        width: 200px
+                        height: 174px
+                        margin: auto
+                        bottom: -52px
+                        right: 0
+                        left: 0
+                        // margin-top: 14%
+                        background-color: transparent
+                        background-image: url('../img/electricos/sensaciones.png')
+                        background-position: center
+                        background-size: cover
+
 @media (min-width: 768px)
     .columns
         display: flex
@@ -956,7 +999,35 @@ p
                     h4
                         // margin-bottom: 14px
                     p
-                    
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+@media (min-width: 800px)
+    .columns
+        .column
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
 @media (min-width: 900px)
     .columns
         // display: flex
@@ -1006,7 +1077,7 @@ p
                         // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
                         // z-index: 3
                     .in
-                        max-width: 56%
+                        max-width: 70%
                         // display: flex
                         // flex-wrap: nowrap
                         // align-content: center
@@ -1049,8 +1120,129 @@ p
                     h4
                         margin-bottom: 18px
                     p
-                    
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: -10%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+
 @media (min-width: 1200px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                height: 420px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    height: 280px
+            .body
+                padding-bottom: 76px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 66%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 60%
+                    h4
+                        // margin-bottom: 18px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                             top: 0%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: 27%
+                        &::after
+
+@media (min-width: 1440px)
     .columns
         // display: flex
         .column
@@ -1142,6 +1334,125 @@ p
                     h4
                         // margin-bottom: 18px
                     p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: -2%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+@media (min-width: 1600px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                height: 420px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    height: 280px
+            .body
+                padding-bottom: 76px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 48%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 60%
+                    h4
+                        // margin-bottom: 18px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: -4%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
 
 /* Desinfectantes
 .desinfectantes
@@ -1262,7 +1573,7 @@ p
         // background-color: $lightGray
         .img
             // width: 100%
-            height: 400px
+            height: 420px
             // background-position: center
             // background-size: cover
             // background-repeat: no-repeat
@@ -1290,8 +1601,8 @@ p
             padding-bottom: 78px
             // z-index: 3
             img
-                width: 100%
-                margin-bottom: 28px
+                width: 96%
+                margin-bottom: 30px
             h1
             p
 
