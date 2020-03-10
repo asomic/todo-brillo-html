@@ -708,6 +708,15 @@ p {
   z-index: 1;
   background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%);
 }
+.columns .column .header .img {
+  z-index: 1;
+  width: 210px;
+  height: 240px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all ease 0.3s;
+}
 .columns .column .header img {
   position: relative;
   z-index: 2;
@@ -796,6 +805,21 @@ p {
 .columns .column.automatico .header img {
   margin-left: -6px;
 }
+.columns .column.automatico .header .img {
+  background-image: url("../img/automaticos/1.png");
+}
+.columns .column.automatico .header .img.a-lavanda {
+  background-image: url("../img/automaticos/item-lavanda.png");
+}
+.columns .column.automatico .header .img.a-manzana {
+  background-image: url("../img/automaticos/item-manzana.png");
+}
+.columns .column.automatico .header .img.a-bebe {
+  background-image: url("../img/automaticos/item-bebe.png");
+}
+.columns .column.automatico .header .img.a-brisa {
+  background-image: url("../img/automaticos/item-brisa.png");
+}
 .columns .column.automatico .header .badges {
   position: absolute;
   width: 100%;
@@ -831,6 +855,21 @@ p {
   background-image: url("../img/automaticos/dias.png");
   background-position: center;
   background-size: cover;
+}
+.columns .column.electricos .header .img {
+  background-image: url("../img/electricos/1.png");
+}
+.columns .column.electricos .header .img.e-lavanda {
+  background-image: url("../img/electricos/item-lavanda.png");
+}
+.columns .column.electricos .header .img.e-manzana {
+  background-image: url("../img/electricos/item-manzana.png");
+}
+.columns .column.electricos .header .img.e-bebe {
+  background-image: url("../img/electricos/item-bebe.png");
+}
+.columns .column.electricos .header .img.e-brisa {
+  background-image: url("../img/electricos/item-brisa.png");
 }
 .columns .column.electricos .header .badges {
   position: absolute;
@@ -905,7 +944,7 @@ p {
 }
 @media (min-width: 1200px) {
   .columns .column .header {
-    height: 420px;
+    height: 380px;
   }
   .columns .column .header img {
     height: 280px;
@@ -927,9 +966,6 @@ p {
   }
 }
 @media (min-width: 1440px) {
-  .columns .column .header {
-    height: 420px;
-  }
   .columns .column .header img {
     height: 280px;
   }
@@ -947,9 +983,6 @@ p {
   }
 }
 @media (min-width: 1600px) {
-  .columns .column .header {
-    height: 420px;
-  }
   .columns .column .header img {
     height: 280px;
   }

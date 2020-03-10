@@ -64,6 +64,12 @@ $(function () {
         });
     }
 
+    $('.selector .swiper-slide').click(function(){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#aromatizantes-section").offset().top
+        }, 600);
+    })
+
     $('#ar-1').click(function(){
         $('.aroma-info').addClass('brisa-marina');
         $('.aroma-info').removeClass('algodon bambu lavanda floral bebe vainilla anti-tabaco');
@@ -110,7 +116,56 @@ $(function () {
     
     $('#ar-9').click(function(){
         $('.aroma-info').addClass('anti-tabaco');
-        $('.aroma-info').removeClass('brisa-marina hawaiian algodon bambu lavanda floral vainilla');
+        $('.aroma-info').removeClass('brisa-marina vainilla hawaiian algodon bambu lavanda floral');
     })
+    
+    // Automatico: Lavanda
+    $('.a-1').click(function(){
+        $('.automatico .header .img').addClass('a-lavanda');
+        $('.automatico .header .img').removeClass('a-manzana a-bebe a-brisa');
+    })
+    
+    // Automatico: Manzana y Canela
+    $('.a-2').click(function(){
+        $('.automatico .header .img').addClass('a-manzana');
+        $('.automatico .header .img').removeClass('a-lavanda a-bebe a-brisa');
+    })
+    
+    // Automatico: Bebé
+    $('.a-3').click(function(){
+        $('.automatico .header .img').addClass('a-bebe');
+        $('.automatico .header .img').removeClass('a-lavanda a-manzana a-brisa');
+    })
+    
+    // Automatico: Brisa Marina
+    $('.a-4').click(function(){
+        $('.automatico .header .img').addClass('a-brisa');
+        $('.automatico .header .img').removeClass('a-lavanda a-bebe a-manzana');
+    })
+    
+    // Eléctrico: Lavanda
+    $('.e-1').click(function(){
+        $('.electricos .header .img').addClass('e-lavanda');
+        $('.electricos .header .img').removeClass('e-manzana e-bebe e-brisa');
+    })
+    
+    // Eléctrico: Manzana y Canela
+    $('.e-2').click(function(){
+        $('.electricos .header .img').addClass('e-manzana');
+        $('.electricos .header .img').removeClass('e-lavanda e-bebe e-brisa');
+    })
+    
+    // Eléctrico: Bebé
+    $('.e-3').click(function(){
+        $('.electricos .header .img').addClass('e-bebe');
+        $('.electricos .header .img').removeClass('e-lavanda e-manzana e-brisa');
+    })
+    
+    // Eléctrico: Brisa Marina
+    $('.e-4').click(function(){
+        $('.electricos .header .img').addClass('e-brisa');
+        $('.electricos .header .img').removeClass('e-lavanda e-bebe e-manzana');
+    })
+    
 
 });
